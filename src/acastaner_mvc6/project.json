@@ -4,11 +4,13 @@
     "dependencies": {
         "Microsoft.AspNet.Diagnostics": "1.0.0-beta3",
         "Microsoft.AspNet.Mvc": "6.0.0-beta3",
-        "Microsoft.AspNet.Server.WebListener": "1.0.0-beta3"
+		"Microsoft.AspNet.Server.WebListener": "1.0.0-beta3",
+		"Microsoft.AspNet.StaticFiles": "1.0.0.0-beta3",
+		"Kestrel": "1.0.0-*"
     },
     "frameworks": {
-        "aspnet50": { },
-        "aspnetcore50": { }
+        "dnx451": { },
+        "dnxcore50": { }
     },
     "bundleExclude": [
         "node_modules",
@@ -23,6 +25,7 @@
         "bower_components"
     ],
     "commands": {
-        "web ": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000"
+		"web ": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000",
+		"kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:5004"
     }
 }
