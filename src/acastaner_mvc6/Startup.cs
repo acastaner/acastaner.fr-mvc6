@@ -7,7 +7,7 @@ namespace acastaner_mvc6
 {
     public class Startup
     {
-        public void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(Microsoft.Framework.DependencyInjection.IServiceCollection services)
         {
 			services.AddMvc();
         }
