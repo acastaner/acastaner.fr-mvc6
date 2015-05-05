@@ -27,7 +27,7 @@ namespace acastaner.Controllers
 			ViewBag.Title = "Mes projets";
 			ViewBag.Heading = ViewBag.Title;
 			ViewBag.SubHeading = "Ce qui occupe mes soirées";
-			ViewBag.HeaderImage = "post-bg.jpg";
+			ViewBag.HeaderImage = "projects-bg.jpg";
 			return View();
 		}
 
