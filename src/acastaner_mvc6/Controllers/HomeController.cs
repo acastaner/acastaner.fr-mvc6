@@ -22,6 +22,15 @@ namespace acastaner.Controllers
 			return View();
 		}
 
+        public ActionResult Curriculum()
+        {
+            ViewBag.Title = "Mon CV";
+            ViewBag.Heading = ViewBag.Title;
+            ViewBag.SubHeading = "Ce que j'ai fait de ma vie";
+            ViewBag.HeaderImage = "projects-bg.jpg";
+            return View();
+        }
+
 		public ActionResult Projects()
 		{
 			ViewBag.Title = "Mes projets";
