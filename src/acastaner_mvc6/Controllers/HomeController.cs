@@ -33,8 +33,8 @@ namespace acastaner.Controllers
 
 		public ActionResult Projects()
 		{
-			ViewBag.Title = "Mes projets";
-			ViewBag.Heading = ViewBag.Title;
+			ViewBag.Title = "Projets";
+			ViewBag.Heading = "Mes Projets";
 			ViewBag.SubHeading = "Ce qui occupe mes soirées";
 			ViewBag.HeaderImage = "projects-bg.jpg";
 			return View();
