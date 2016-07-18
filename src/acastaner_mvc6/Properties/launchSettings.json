@@ -22,6 +22,11 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "acastaner-fr": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "http://127.0.0.1:5000"
     }
   }
 }
