@@ -1,2 +1,2 @@
 # acastaner.fr-mvc6
-My personnal website, written in ASP.NET vNext / MVC6. This application runs fine under Linux with DNVM beta 5/Mono 4.0.1. You can see it live at https://acastaner.fr (unless it's broken at that time, in that case you won't see it.)
+My personnal website, written in ASP.NET vNext / MVC6. This application runs fine under Linux with .NET Core 1.0. You can see it live at https://acastaner.fr (unless it's broken at that time, in that case you won't see it.)
