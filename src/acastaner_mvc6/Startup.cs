@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Server.Kestrel;
+using Microsoft.Extensions.Logging;
 
 namespace acastaner_mvc6
 {
@@ -27,7 +28,7 @@ namespace acastaner_mvc6
             services.AddMvc();
         }
         
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
         {
 			app.UseStaticFiles();
 			app.UseMvc(routes =>
@@ -37,6 +38,7 @@ namespace acastaner_mvc6
 					template: "{controller}/{action}/{id?}",
 					defaults: new { controller = "Home", action = "Index" });
 			});
+            loggerFactory.AddConsole();
 		}
     }
 }
