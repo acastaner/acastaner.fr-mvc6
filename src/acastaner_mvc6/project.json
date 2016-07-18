@@ -22,9 +22,6 @@
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.0.0",
     "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0"
   },
-  "commands": {
-    "web": "Microsoft.AspNet.Server.Kestrel"
-  },
   "tools": {
     "BundlerMinifier.Core": "2.0.238",
     "Microsoft.AspNetCore.Razor.Tools": "1.0.0-preview2-final",

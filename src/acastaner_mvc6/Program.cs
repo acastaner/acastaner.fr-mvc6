@@ -12,6 +12,7 @@ namespace acastaner_mvc6
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseUrls("http://127.0.0.1:5000")
                 .Build();
 
             host.Run();

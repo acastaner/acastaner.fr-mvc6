@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Server.Kestrel;
 
 namespace acastaner_mvc6
 {
@@ -15,11 +16,6 @@ namespace acastaner_mvc6
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
 
-            if (env.IsDevelopment())
-            {
-                // This will push telemetry data through Application Insights pipeline faster, allowing you to view results immediately.
-                builder.AddApplicationInsightsSettings(developerMode: true);
-            }
             Configuration = builder.Build();
         }
 
@@ -28,7 +24,6 @@ namespace acastaner_mvc6
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
             services.AddMvc();
         }
         
