@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace acastaner.Controllers
 {
@@ -56,7 +57,7 @@ namespace acastaner.Controllers
             ViewBag.SubHeading = "(Aucune de ces informations n'est enregistrée)";
             ViewBag.HeaderImage = "tools-bg.png";
 
-            ViewBag.RemoteIpAddress = HttpContext.Connection.RemoteIpAddress.ToString();
+            ViewBag.RemoteIpAddress = String.IsNullOrEmpty(Request.Headers["X-Forwarded-For"].ToString()) ? HttpContext.Connection.RemoteIpAddress.ToString() : Request.Headers["X-Forwarded-For"].ToString();
             ViewBag.BrowserUserAgent = HttpContext.Request.Headers["User-Agent"].ToString();
             ViewBag.IsTls = HttpContext.Request.IsHttps;
             
