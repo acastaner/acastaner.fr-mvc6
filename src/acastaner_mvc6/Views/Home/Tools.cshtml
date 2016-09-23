@@ -1,0 +1,13 @@
+﻿@{
+    bool isTls = ViewBag.IsTls;
+    
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Adresse IP</h2>
+<p>Votre adresse IP est: @ViewBag.RemoteIpAddress</p>
+
+<h2>Navigateur</h2>
+<p>Votre <i>User-Agent</i> est: @ViewBag.BrowserUserAgent</p>
+<p>
+    TLS: @if (isTls) { <span style="color:green;">Oui (connexion chiffrée)</span> } else { <span style="color:red">Non (connexion non chiffrée)</span>}
+</p>

@@ -48,5 +48,19 @@ namespace acastaner.Controllers
 			ViewBag.HeaderImage = "contact-bg.jpg";
 			return View();
 		}
+
+        public ActionResult Tools()
+        {
+            ViewBag.Title = "Outils";
+            ViewBag.Heading = ViewBag.Title;
+            ViewBag.SubHeading = "(Aucune de ces informations n'est enregistrée)";
+            ViewBag.HeaderImage = "tools-bg.png";
+
+            ViewBag.RemoteIpAddress = HttpContext.Connection.RemoteIpAddress.ToString();
+            ViewBag.BrowserUserAgent = HttpContext.Request.Headers["User-Agent"].ToString();
+            ViewBag.IsTls = HttpContext.Request.IsHttps;
+            
+            return View();
+        }
 	}
 }
