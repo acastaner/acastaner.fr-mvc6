@@ -59,7 +59,6 @@ namespace acastaner.Controllers
 
             ViewBag.RemoteIpAddress = String.IsNullOrEmpty(Request.Headers["X-Forwarded-For"].ToString()) ? HttpContext.Connection.RemoteIpAddress.ToString() : Request.Headers["X-Forwarded-For"].ToString();
             ViewBag.BrowserUserAgent = HttpContext.Request.Headers["User-Agent"].ToString();
-            ViewBag.IsTls = HttpContext.Request.IsHttps;
             
             return View();
         }
