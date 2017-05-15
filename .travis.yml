@@ -1,0 +1,5 @@
+language: csharp
+solution: acastaner-mvc6.sln
+mono: none
+dotnet: 1.0.3
+dist: trusty
