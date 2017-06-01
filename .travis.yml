@@ -12,7 +12,7 @@ branches:
     - master
     - release
 mono: none
-dotnet: 1.0.3
+dotnet: 1.0.4
 dist: trusty
 script:
   - chmod +x ./build.sh
