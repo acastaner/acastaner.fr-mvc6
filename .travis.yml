@@ -15,5 +15,5 @@ mono: none
 dotnet: 1.0.3
 dist: trusty
 script:
-  - dotnet restore
-  - dotnet build -c release
+  - chmod +x ./build.sh
+  - build.sh
